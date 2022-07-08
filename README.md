@@ -6,7 +6,7 @@ In this project, we'll generate QR codes by converting entered text into QR char
 
 <h2>How to use</h2>
 <p>Type your text into input field section and press on "generate QR" button to generate QR Code</p>
-<p>after clicking on "generate QR" button a QR image will load that contains your text in QR characters format.</p>
+<p>after clicking on the "generate QR" button a QR image will load that contains your text in QR characters format.</p>
 <h4>Example</h4>
 <img src="https://github.com/BHOLU-SINGH/generate-qr-code/blob/master/output-img.png" />
 <h2>Advantage</h2>

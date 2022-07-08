@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate own QR-Code | Free Projects1</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="In this project, we'll generate QR codes by converting entered text into QR characters">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <input type="text" class="input" id="text" placeholder="Type something here..." autocomplete="off">
+        <button type="button" onclick="generateQR()">Generate QR</button>
+        <div id="qr-image">
+            <span class="error"></span><br>
+            <img src="" id="img" alt="Makes sure you internet connection is established">
+        </div>
+    </div>
+
+
+    <script>
+        function generateQR(){
+            document.querySelector("#qr-image").style.display = "block";
+            let QRtext = document.querySelector("#text").value;
+            if(QRtext.trim().length == 0){
+                document.querySelector("#qr-image .error").innerHTML = "Please type something...";
+                document.querySelector("#img").style.display = "none";
+            }else{
+                document.querySelector("#img").style.display = "block";
+                document.querySelector("#qr-image .error").innerHTML = "";
+                document.querySelector("#img").src = "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=" + QRtext;
+            }
+        }
+    </script>
+</body>
+</html>

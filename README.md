@@ -16,4 +16,6 @@ In this project, we'll generate QR codes by converting entered text into QR char
   <li>now, we can hide our info. from others, without scan others can't read</li>
   <li>share your secrets with your friends into QR format</li>
   <li>it can be use to generate QR code for your social media account's link</li>
+  <li>no need to write long paragraph, just convert into QR format and get it</li>
+  <li>now, no need to find on social media convert social media link in QR format and share it</li>
 </ul>
